@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "lint": "eslint {src,mock,tests}/**/*.{js,jsx} --fix",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@ant-design/charts": "^1.0.13",
+    "antd": "^4.0.0",
+    "d3-dsv": "^2.0.0",
+    "echarts": "4.0.0",
+    "echarts-for-react": "^2.0.16",
+    "mqtt": "^4.2.6",
+    "react": "^16.8.6",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^16.8.6",
+    "react-stockcharts": "^0.7.8",
+    "react-stomp": "^5.0.0",
+    "react-use": "^15.3.8",
+    "stompjs": "^2.3.3",
+    "umi-request": "^1.3.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "react-test-renderer": "^16.7.0",
+    "umi": "^2.7.7",
+    "umi-plugin-react": "^1.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
